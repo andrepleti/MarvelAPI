@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Heróis</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css"  rel="stylesheet" />
-        <link rel="stylesheet" href="css/album.css"  rel="stylesheet" />
-        <link rel="stylesheet" href="css/index.css"  rel="stylesheet" />
+        <link href="css/bootstrap.min.css"  rel="stylesheet" />
+        <link href="css/album.css"  rel="stylesheet" />
+        <link href="css/index.css"  rel="stylesheet" />
     </head>
 
     <body>
@@ -20,7 +20,7 @@
                                     <p class="card-text">{{ item.name }}</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                                        <a v-bind:href="'detalhes.html?' + item.id" class="btn btn-sm btn-outline-secondary">Detalhes</a>
                                     </div>
                                     </div>
                                 </div>
@@ -31,8 +31,8 @@
             </div>
         </main>
     </body>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://unpkg.com/vue"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" src="js/axios.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
 </html>

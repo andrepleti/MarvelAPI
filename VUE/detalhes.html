@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Detalhes</title>
+    <link href="css/bootstrap.min.css"  rel="stylesheet" />
+    <link href="css/carousel.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main role="main">
+
+      <div class="container marketing" id="app">
+
+        <div class="row featurette" v-for="item in items">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading"><span class="text-muted">{{ item.name }}</span></h2>
+            <p class="lead">{{ item.description }}</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" v-bind:src="item.thumbnail.path + '.' + item.thumbnail.extension" alt="Generic placeholder image">
+          </div>
+        </div>
+        <br>
+        <a href="index.html" class="btn btn-sm btn-outline-secondary">Voltar</a>
+      </div>
+      </main>
+    </body>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" src="js/axios.min.js"></script>
+    <script src="js/popper.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/holder.min.js" type="text/javascript"></script>
+    <script src="js/detalhes.js" type="text/javascript"></script>
+</html>
